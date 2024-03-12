@@ -33,6 +33,7 @@
   "dependencies": {
     "cross-env": "^6.0.3",
     "electron-is-dev": "^1.1.0",
+    "flowbite": "^2.3.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
@@ -47,7 +48,9 @@
     "build-electron": "electron-builder",
     "build": "npm run build-react && npm run build-electron",
     "start": "concurrently \"cross-env BROWSER=none yarn start-react\" \"wait-on http://localhost:3000 && electron .\""
-  },
+
+
+    },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -67,6 +70,7 @@
     "concurrently": "^5.0.0",
     "electron": "^7.1.0",
     "electron-builder": "^22.1.0",
+    "tailwindcss": "^3.4.1",
     "wait-on": "^3.3.0"
   }
 }
